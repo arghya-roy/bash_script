@@ -1,4 +1,4 @@
---
+
 ### assign a output of a command inside a variable -
 #### Syntax
 ```
