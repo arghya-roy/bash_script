@@ -165,3 +165,10 @@ After second if: 6
 ```
 #### Remember - 
 
+##### There are some example which you can pass inside double parentheses
+`if (( var1=$(( 2+2 )) ));` </br>
+`if (( var1=$(( 2-2 )) ));` </br>
+`if (( var1=$(( 2/2 )) ));` </br>
+`if (( var1=$(( 2%2 )) ));` </br>
+`if (( var1=$(( 2*2 )) ));` </br>
+
