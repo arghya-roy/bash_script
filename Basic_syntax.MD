@@ -73,10 +73,15 @@ it is helping us to solve mathematical problem. But it cannot solve equation wit
 #### Syntax
 echo $(( expression ))
 #### Example 1-
-a=$(( 2+2 ))
+a=$(( 2+2 )) </br>
 echo $a
 #### Example 2-
-echo $(( 2+2 )) </br>
+echo $(( 2+2 )) </br> 
+echo $(( 2-2 )) </br>
+echo $(( 2*2 )) </br>
+echo $(( 2/2 )) </br>
+echo $(( 2%2 )) </br>
+</br>
 **ARITHMETIC OPERATORS RANKED IN ORDER OF PRECEDENCE (HIGHEST PRECEDENCE FIRST):** </br>
 </br>
 ![Name](https://github.com/arghya-roy/bash_script/blob/main/Screenshot%20(364).png "i")
