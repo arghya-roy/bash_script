@@ -1,4 +1,12 @@
-
+### Always try to give this commented line before scripts-
+```
+# Author: John Doe
+# Created: 7th July 2020
+# Last Modified: 7th July 2020
+# Description: Creates a backup in ~/bash_course folder of all files in the home directory
+# Usage: backup_script
+```
+---
 ### assign a output of a command inside a variable -
 #### Syntax
 ```
