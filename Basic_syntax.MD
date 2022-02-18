@@ -116,4 +116,18 @@ user's home directory. </br>
 `~-` It gives my previous working directory, same as $OLDPWD. </br>
 
 ---
+### Brace Expansion - 
+A way of automatically generating text according to a
+certain pattern.
+**Example-**
+```
+echo {1,2,3,4,5}                   // it print 1 to 5
+echo {1..5}                       // it also print 1 to 5
+echo {a..e}                       // it print a to e
+echo {1..5..2}                    // it print 1 3 5, means it skips 2 numbers.
+echo Month{01..12}                // it print month01 to month12
+touch file{1..5}.txt              // it creates folder from file1.text to file5.text
+mkdir folder1                      // creayes directory
+touch folder1/file{1..2}.txt      // it created file1.txt and file.txt inside folder1.
+```
 
