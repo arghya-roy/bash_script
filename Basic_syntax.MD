@@ -105,6 +105,7 @@ to get the correct output we have to use scale before expression-
 echo "scale=2; 12/5" | bc
 ```
 scale=2 means it gives 2.40, it we write scale=3 then it gives 2.400
+
 ---
 ### Tidle Expansion -
 we can that this a shortcut of some must useful command line or variable </br>
