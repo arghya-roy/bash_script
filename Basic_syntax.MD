@@ -89,5 +89,21 @@ echo $(( 5/2 )) // as a outout of this it gives 2 but the answer would be 2.5, s
 ![Name](https://github.com/arghya-roy/bash_script/blob/main/Screenshot%20(364).png "i")
 
 ---
+### BC COMMAND -
+#### Syntax-
+**Using the bc command for normal equation**
+echo “expression” | bc
+**Using the scale variable to control the number decimal places shown**
+echo “scale=value; expression” | bc
+**example1-**
+```
+echo "12/5" | bc
+```
+If we run the above command then also it gives 2, but it needs to give 2.4
+to get the correct output we have to use scale before expression-
+```
+echo "scale=2; 12/5" | bc
+```
+scale=2 means it gives 2.40, it we write scale=3 then it gives 2.400
 
 
