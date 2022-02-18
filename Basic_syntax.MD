@@ -10,6 +10,21 @@
 ### How to add script folder path to enviroment variable-   see it later
                  
 ---
+### Variables-
+There are mainly two types of variable-  </br>
+#### 1) shell variable- variable name would be always capital. </br>
+some of examples- </br>
+**HOME** Absolute path to the current user's home directory  </br>
+**PATH** List of directories that the shell should search for executable files  </br>
+**USER** The current user's username  </br>
+**HOSTNAME** The name of the current machine  </br>
+**HOSTTYPE** The current machine's CPU architecture  </br>
+**PS1** The terminal prompt string  </br>
+#### 2) user defined variable-  </br>
+name=value </br>
+Note 1: There should be no spaces around the equals sign </br>
+Note 2: Names of user-defined variables should be all lowercase </br>
+
 ### assign a output of a command inside a variable -
 #### Syntax
 ```
