@@ -81,11 +81,13 @@ echo $(( 2-2 )) </br>
 echo $(( 2*2 )) </br>
 echo $(( 2/2 )) </br>
 echo $(( 2%2 )) </br>
+echo $(( 5/2 )) // as a outout of this it gives 2 but the answer would be 2.5, so this method cannot solve decimal related problem. </br>
+                   to overcome this problem we use BC Command.
 </br>
 **ARITHMETIC OPERATORS RANKED IN ORDER OF PRECEDENCE (HIGHEST PRECEDENCE FIRST):** </br>
 </br>
 ![Name](https://github.com/arghya-roy/bash_script/blob/main/Screenshot%20(364).png "i")
 
-
+---
 
 
