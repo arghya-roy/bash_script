@@ -19,5 +19,7 @@ The “or” operator. The shell will only run
 command2 if command1 is unsuccessful (i.e. returns a non-zero exit code).
 
 ---
+## if - else condition -
+#### Syntax - [ EXPRESSION ]
 
 
