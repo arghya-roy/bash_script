@@ -21,7 +21,7 @@ some of examples- </br>
 **HOSTTYPE** The current machine's CPU architecture  </br>
 **PS1** The terminal prompt string  </br>
 #### 2) user defined variable-  </br>
-name=value </br>
+name=value (no quoatation)</br>
 Note 1: There should be no spaces around the equals sign </br>
 Note 2: Names of user-defined variables should be all lowercase </br>
 
