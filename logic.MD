@@ -238,3 +238,5 @@ mainly we use double bracket where anything releated to string.
 `-z` `[[ -z $c ]]` Successful if a string is empty </br>
 `-n` `[[ -n $c ]]` Successful if a string is not empty </br>
 
+##  Troubleshooting - 
+Whenever there is a error after running with single bracket then try with with double bracket and vice versa.
