@@ -105,5 +105,14 @@ to get the correct output we have to use scale before expression-
 echo "scale=2; 12/5" | bc
 ```
 scale=2 means it gives 2.40, it we write scale=3 then it gives 2.400
+---
+### Tidle Expansion -
+we can that this a shortcut of some must useful command line or variable </br>
+`~` = It shows the current user's home directory path. Means It is Exactly same as $HOME </br>
+`~username` like `~ec2-user` if username refers to a valid user, give the path to that 
+user's home directory. </br>
+`~+` It gives the present working directory same as $PWD command. </br>
+`~-` It gives my previous working directory, same as $OLDPWD. </br>
 
+---
 
