@@ -47,6 +47,7 @@ ${Variable_name : offset : length} </br>
 The shell will expand the value of the parameter starting at
 character number defined by “offset” and expand up to a length
 of 'length'
+
 ---
 ### assign a output of a command inside a variable -
 #### Syntax
