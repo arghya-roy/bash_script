@@ -141,4 +141,27 @@ outer_variable = Defined
 The double parentheses construct in bash allows: </br>
 **Arithmetic evaluation.** Defining a variable as a=$(( 1+1 )) calculates the equation and sets a to 2. </br>
 **C-style variable manipulation.** For example, incrementing variables with (( a++ )). </br>
+```
+variable=4
+echo Before first if: $variable
+if (( variable++ ))
+then
+        echo Incremented ++ style: $variable
+fi
+echo After first if: $variable
+if (( variable=variable+1 ))
+then
+        echo Incremented arithmetically $variable
+fi
+echo After second if: $variable
+```
+#### Output will be 
+```
+Before first if: 4
+Incremented ++ style: 5
+After first if: 5
+Incremented arithmetically 6
+After second if: 6
+```
+#### Remember - 
 
