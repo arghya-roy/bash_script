@@ -91,7 +91,8 @@ There are four types of syntax - </br>
 **4) if [[ command ]];** </br>
 
 ## 1) if ( command ); - Not use too much.
-Using single parentheses in bash scripting creates a subshell. When combined with the if statement, the subprocess finishes before continuing the program. The if analyzes the exit status and acts accordingly.
+Using single parentheses in bash scripting creates a subshell. When combined with the if statement, the subprocess finishes before continuing the program. The if analyzes the exit status and acts accordingly. </br>
+In this commands running inside if does not keep its result, it works as a local command or local variable. we will understand in after reading the below example.
 ```
 outer_variable=Defined
 echo Before if:
