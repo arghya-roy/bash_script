@@ -11,5 +11,5 @@ variable_name=$(command)
 hi=$(echo "ar")  # echo "ar" gives a output ar, then this ar will be assign to hi variable.
 echo "${hi}"  # it will show ar as a output
 ```
-
+---
 
