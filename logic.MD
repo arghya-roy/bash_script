@@ -66,9 +66,9 @@ different pieces of information”
 `arg1 -le arg2` True if arg1 less than or equal to arg2 </br>
 `arg1 -gt arg2` True if arg1 greater than arg2 </br>
 `arg1 -ge arg2` True if arg1 greater than or equal to arg2 </br>
-</br>
+
 **need to use [[ ]] for below -** </br>
-</br>
+
 `string1 == string2` True if the strings are equal. It will perform pattern matching when used with the [[ command. The = notation should be used with the test command for POSIX   conformance. </br>
 `string1 = string2` (same as string1 == string2 ). </br>
 `string1 != string2` True if the strings are not equal. </br>
@@ -182,7 +182,7 @@ you have to use [ ] , (( )) does not work for this case.
 Comparing numbers and testing whether a file exists or other testing. 
 </br>
 #### There are some example which you can pass inside single third bracket.
-</br>
+
 `-eq` `[ 2 -eq 2 ]` Successful if the two numbers are equal </br>
 `-ne` `[ 2 -ne 2 ]` Successful if the two numbers are not equal </br>
 `-e` `[ -e /path/to/file ]` Successful if a file system entry /path/to/file exists </br>
