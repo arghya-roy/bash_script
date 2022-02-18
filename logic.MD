@@ -89,3 +89,50 @@ There are four types of syntax - </br>
 **2) if (( command ));** </br>
 **3) if [ command ];** </br>
 **4) if [[ command ]];** </br>
+
+## 1) if ( command ); - Not use too much.
+Using single parentheses in bash scripting creates a subshell. When combined with the if statement, the subprocess finishes before continuing the program. The if analyzes the exit status and acts accordingly.
+```
+outer_variable=Defined
+echo Before if:
+echo inner_variable = $inner_variable
+echo outer_variable = $outer_variable
+if (
+        echo Inside subshell:
+        inner_variable=Defined
+        echo inner_variable = $inner_variable
+        outer_variable=Changed
+        echo outer_variable = $outer_variable
+)
+then
+        echo After then:
+        echo inner_variable = $iner_variable
+        echo outer_variable = $outer_variable
+fi
+echo After fi:
+echo inner_variable = $inner_variable
+echo outer_variable = $outer_variable
+```
+The program does the following: </br>
+
+Line 1 creates a variable called outer_variable in which we store a string Defined. </br>
+Lines 2-4 print the variables to the console. At this moment, outer_variable has a string stored in it, while inner_variable is blank. </br>
+Line 5 starts the if statement and a sub-process, delimited by single parentheses. </br>
+Line 6-11 store a string inside the inner_variable and change the outer_variable to a different string. Both values print to the console, and the sub-process ends with an exit code. In this case, the sub-process ends successfully with an exit code 0. </br>
+Line 12-16 execute after the sub-process and print the variable values. However, the values change back to what they were before the if statement. The sub-process only stores the values locally and not globally. </br>
+Lines 16-19 run after the commands in the then clause. The values remain unchanged outside the statement. </br>
+#### Output will be -
+```
+Before if:
+inner_variable = 
+outer_variable = Defined
+Inside subshell:
+inner_variable = Defined
+outer_variable = Changed
+After then:
+inner_variable = 
+outer_variable = Defined
+After fi:
+inner_variable = 
+outer_variable = Defined
+```
