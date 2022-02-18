@@ -41,4 +41,8 @@ different pieces of information”
 start and end using the reserved words “if” and “fi”. </br>
 check the exit status of a command and only runs the command if a certain condition is true.
 ### syntax -
-`if [ $number -gt 0 ];` or if command 
+There are four types of syntax - </br>
+1) if ( command ); </br>
+2) if (( command )); </br>
+3) if [ command ]; </br>
+4) if [[ command ]]; </br>
