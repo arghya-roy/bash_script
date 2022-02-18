@@ -76,8 +76,9 @@ echo $(( expression ))
 a=$(( 2+2 ))
 echo $a
 #### Example 2-
-echo $(( 2+2 ))
+echo $(( 2+2 )) </br>
 **ARITHMETIC OPERATORS RANKED IN ORDER OF PRECEDENCE (HIGHEST PRECEDENCE FIRST):** </br>
+</br>
 ![Name](https://github.com/arghya-roy/bash_script/blob/main/Screenshot%20(364).png "i")
 
 
