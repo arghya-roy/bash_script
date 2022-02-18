@@ -28,17 +28,22 @@ Note 2: Names of user-defined variables should be all lowercase </br>
 1) Simple Syntax: $Variable_name     // this is correct.  </br>
 2) Advanced Syntax: ${Variable_name}  // this is also correct. it is a best prectise to use this.
 **parameter Expansion**
-${parameter^} </br>
+${Variable_name^} </br>
 Convert the first character of the parameter to uppercase </br>
-${parameter^^} </br>
+</br>
+${Variable_name^^} </br>
 Convert all characters of the parameter to uppercase </br>
-{parameter,} </br>
+</br>
+{Variable_name,} </br>
 Convert first character of the parameter to lowercase </br>
-${parameter,,} </br>
+</br>
+${Variable_name,,} </br>
 Convert all characters of the parameter to lowercase </br>
-${#parameter} </br>
+</br>
+${#Variable_name} </br>
 Display how many characters the variable’s value contains </br>
-${parameter : offset : length} </br>
+</br>
+${Variable_name : offset : length} </br>
 The shell will expand the value of the parameter starting at
 character number defined by “offset” and expand up to a length
 of 'length'
