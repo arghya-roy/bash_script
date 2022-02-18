@@ -29,7 +29,8 @@ Note 2: Names of user-defined variables should be all lowercase </br>
 </br>
 3) Advanced Syntax: ${Variable_name}  // this is also correct. it is a best prectise to use this.
 </br>
-**parameter Expansion** </br>
+
+ **parameter Expansion** </br>
 ${Variable_name^} </br>
 Convert the first character of the parameter to uppercase </br>
 </br>
