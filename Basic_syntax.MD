@@ -26,9 +26,8 @@ Note 1: There should be no spaces around the equals sign </br>
 Note 2: Names of user-defined variables should be all lowercase </br>
 ### How to take output of a variable or parameter Expansion or variable expansion-
 1) Simple Syntax: $Variable_name     // this is correct.  </br>
-2) Advanced Syntax: ${Variable_name}  // this is also correct. it is a best prectise to use this. </br>
-**variable/parameter Expansion** 
-</br>
+2) Advanced Syntax: ${Variable_name}  // this is also correct. it is a best prectise to use this.
+### variable/parameter Expansion 
 ${Variable_name^} </br>
 Convert the first character of the parameter to uppercase </br>
 </br>
