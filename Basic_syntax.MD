@@ -68,4 +68,17 @@ hi=$(curl https://api.github.com/users/defunkt)
 echo "${hi}"
 ```
 ---
+### Arithmetic Expansion -
+it is helping us to solve mathematical problem. But it cannot solve equation with decimal number. to solve decimal number we need to use BC.
+#### Syntax
+echo $(( expression ))
+#### Example 1-
+a=$(( 2+2 ))
+echo $a
+#### Example 2-
+echo $(( 2+2 ))
+**ARITHMETIC OPERATORS RANKED IN ORDER OF PRECEDENCE (HIGHEST PRECEDENCE FIRST):** </br>
+
+
+
 
