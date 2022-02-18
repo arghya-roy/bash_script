@@ -137,7 +137,7 @@ After fi:
 inner_variable = 
 outer_variable = Defined
 ```
-## 1) if (( command )); - Arithmetic evaluation and C-style variable manipulation
+## 2) if (( command )); - Arithmetic evaluation and C-style variable manipulation
 The double parentheses construct in bash allows: </br>
 **Arithmetic evaluation.** Defining a variable as a=$(( 1+1 )) calculates the equation and sets a to 2. </br>
 **C-style variable manipulation.** For example, incrementing variables with (( a++ )). </br>
