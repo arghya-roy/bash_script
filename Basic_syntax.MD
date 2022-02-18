@@ -27,6 +27,21 @@ Note 2: Names of user-defined variables should be all lowercase </br>
 ### How to take output of a variable or parameter Expansion or variable expansion-
 1) Simple Syntax: $Variable_name     // this is correct.  </br>
 2) Advanced Syntax: ${Variable_name}  // this is also correct. it is a best prectise to use this.
+**parameter Expansion**
+${parameter^} </br>
+Convert the first character of the parameter to uppercase </br>
+${parameter^^} </br>
+Convert all characters of the parameter to uppercase </br>
+{parameter,} </br>
+Convert first character of the parameter to lowercase </br>
+${parameter,,} </br>
+Convert all characters of the parameter to lowercase </br>
+${#parameter} </br>
+Display how many characters the variable’s value contains </br>
+${parameter : offset : length} </br>
+The shell will expand the value of the parameter starting at
+character number defined by “offset” and expand up to a length
+of 'length'
 ---
 ### assign a output of a command inside a variable -
 #### Syntax
