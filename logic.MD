@@ -178,10 +178,10 @@ you have to use [ ] , (( )) does not work for this case.
 `if (( var1=$(( 2%2 )) ));` </br>
 `if (( var1=$(( 2*2 )) ));` </br>
 
-## 2) if [ command ]; - compare numbers and testing
+## 3) if [ command ]; - compare numbers and testing
 Comparing numbers and testing whether a file exists or other testing. 
 </br>
-#### There are some example which you can pass inside single third bracket.
+#### There are some example which you can pass inside single bracket.
 
 `-eq` `[ 2 -eq 2 ]` Successful if the two numbers are equal </br>
 `-ne` `[ 2 -ne 2 ]` Successful if the two numbers are not equal </br>
@@ -224,3 +224,17 @@ Comparing numbers and testing whether a file exists or other testing.
 `arg1 -le arg2` True if arg1 less than or equal to arg2 </br>
 `arg1 -gt arg2` True if arg1 greater than arg2 </br>
 `arg1 -ge arg2` True if arg1 greater than or equal to arg2 </br>
+## 4) if [[ command ]]; - String releated
+mainly we use double bracket where anything releated to string.
+#### There are some example which you can pass inside single third bracket.
+`string1 == string2` True if the strings are equal. It will perform pattern matching when used with the [[ command. The = notation should be used with the test command for POSIX   conformance. </br>
+`string1 = string2` (same as string1 == string2 ). </br>
+`string1 != string2` True if the strings are not equal. </br>
+`string1 =~ regex` True if the strings match the Bash regular expression regex. Captured groups are stored in the BASH_REMATCH array variable. </br>
+`string1 < string2` True if string1 sorts before string2 lexicographically. </br>
+`string1 > string2` True if string1 sorts after string2 lexicographically. </br>
+`=` `[[ $a = $b ]]` Successful if the two strings are equal </br>
+`!=` `[[ $a != $b ]]` Successful if the two strings are not equal </br>
+`-z` `[[ -z $c ]]` Successful if a string is empty </br>
+`-n` `[[ -n $c ]]` Successful if a string is not empty </br>
+
