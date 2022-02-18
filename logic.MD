@@ -23,3 +23,14 @@ command2 if command1 is unsuccessful (i.e. returns a non-zero exit code).
 #### Syntax - [ EXPRESSION ]
 
 
+`-eq` `[ 2 -eq 2 ]` Successful if the two numbers are equal </br>
+`-ne` `[ 2 -ne 2 ]` Successful if the two numbers are not equal </br>
+`=` `[ $a = $b ]` Successful if the two strings are equal </br>
+`!=` `[ $a != $b ]` Successful if the two strings are not equal </br>
+`-z` `[ -z $c ]` Successful if a string is empty </br>
+`-n` `[ -n $c ]` Successful if a string is not empty </br>
+`-e` `[ -e /path/to/file ]` Successful if a file system entry /path/to/file exists </br>
+`-f` `[ -f /path/to/file ]` Successful if a file system entry /path/to/file exists and is a regular file </br>
+`-d`  `[ -d /path/to/dir ]` Successful if a file system entry /path/to/file exists and is a directory </br>
+`-x` `[ -x /path/to/file ]` Successful if a file system entry /path/to/dir exists and is executable by the current user </br>
+
