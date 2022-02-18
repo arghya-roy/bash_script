@@ -5,11 +5,17 @@
 variable_name=$(command)
 ```
 **remember**- there would be no space in both side of = side.<br /> command should be wrapped by single first bracket.<br /> give $ sign before first bracket.
-#### Example-
+#### Example1-
 ```
 #!/bin/bash
 hi=$(echo "ar")  # echo "ar" gives a output ar, then this ar will be assign to hi variable.
 echo "${hi}"  # it will show ar as a output
+```
+#### Example2-
+```
+#!/bin/bash
+hi=$(curl https://api.github.com/users/defunkt)
+echo "${hi}"
 ```
 ---
 
