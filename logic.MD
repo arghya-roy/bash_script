@@ -224,6 +224,19 @@ Comparing numbers and testing whether a file exists or other testing.
 `arg1 -le arg2` True if arg1 less than or equal to arg2 </br>
 `arg1 -gt arg2` True if arg1 greater than arg2 </br>
 `arg1 -ge arg2` True if arg1 greater than or equal to arg2 </br>
+
+**[] does not support && and || . so to use this we have to follow following steps-** </br>
+```
+#!/bin/bash
+a=$(cat file1.txt) # "a" equals contents of file1.txt
+b=$(cat file2.txt) # "b" equals contents of file2.txt
+c=$(cat file3.txt) # "c" equals contents of file3.txt
+if [ "$a" = "$b" ] && [ "$a" = "$c" ]; then
+rm file2.txt file3.txt
+else
+echo "File1.txt did not match both files"
+fi
+```
 ## 4) if [[ command ]]; - String releated
 mainly we use double bracket where anything releated to string.
 #### There are some example which you can pass inside single third bracket.
@@ -237,6 +250,18 @@ mainly we use double bracket where anything releated to string.
 `!=` `[[ $a != $b ]]` Successful if the two strings are not equal </br>
 `-z` `[[ -z $c ]]` Successful if a string is empty </br>
 `-n` `[[ -n $c ]]` Successful if a string is not empty </br>
+**[[ ]] support && and || . so to use this we have to follow following steps-** </br>
+```
+#!/bin/bash
+a=$(cat file1.txt) # "a" equals contents of file1.txt
+b=$(cat file2.txt) # "b" equals contents of file2.txt
+c=$(cat file3.txt) # "c" equals contents of file3.txt
+if [[ "$a" = "$b" && "$a" = "$c" ]]; then
+ rm file2.txt file3.txt
+else
+echo "File1.txt did not match both files"
+fi
+```
 
 ##  Troubleshooting - 
 Whenever there is a error after running with single bracket then try with with double bracket and vice versa.
