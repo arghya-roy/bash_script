@@ -23,7 +23,7 @@ command2 if command1 is unsuccessful (i.e. returns a non-zero exit code).
 “a command that can be used in bash to compare
 different pieces of information”
 #### Syntax - [ EXPRESSION ]
-</br>
+
 **need to use [ ] for below -** </br>
 `-eq` `[ 2 -eq 2 ]` Successful if the two numbers are equal </br>
 `-ne` `[ 2 -ne 2 ]` Successful if the two numbers are not equal </br>
