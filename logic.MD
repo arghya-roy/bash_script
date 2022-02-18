@@ -108,7 +108,7 @@ if (
         echo inner_variable = $inner_variable
         outer_variable=Changed
         echo outer_variable = $outer_variable
-)
+);
 then
         echo After then:
         echo inner_variable = $iner_variable
@@ -148,12 +148,12 @@ The double parentheses construct in bash allows: </br>
 ```
 variable=4
 echo Before first if: $variable
-if (( variable++ ))
+if (( variable++ ));
 then
         echo Incremented ++ style: $variable
 fi
 echo After first if: $variable
-if (( variable=variable+1 ))
+if (( variable=variable+1 ));
 then
         echo Incremented arithmetically $variable
 fi
@@ -250,7 +250,7 @@ mainly we use double bracket where anything releated to string.
 `!=` `[[ $a != $b ]]` Successful if the two strings are not equal </br>
 `-z` `[[ -z $c ]]` Successful if a string is empty </br>
 `-n` `[[ -n $c ]]` Successful if a string is not empty </br>
-**[[ ]] support && and || . so to use this we have to follow following steps-** </br>
+#### **[[ ]] support && and || . so to use this we have to follow following steps-** </br>
 ```
 #!/bin/bash
 a=$(cat file1.txt) # "a" equals contents of file1.txt
