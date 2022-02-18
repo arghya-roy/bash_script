@@ -164,6 +164,8 @@ Incremented arithmetically 6
 After second if: 6
 ```
 #### Remember - 
+Double parentheses only works for mathematical equations. if you want to compare some integer then
+you have to use [ ] , (( )) does not work for this case.
 
 ##### There are some example which you can pass inside double parentheses
 `if (( var1=$(( 2+2 )) ));` </br>
