@@ -276,3 +276,50 @@ read ab
       ls -ld "$ab"
     fi
 ```
+---
+## Case Statement -
+Case statements provide us with an elegant way to implement branching logic, and are often more convenient than creating multiple “elif” statements.</br>
+The tradeoff, however, is that case statements can only work with 1 variable. </br>
+### Syntax for case statements:
+```
+case "$variable" in # don't forget the $ and the double quotes!
+pattern1)
+Commands ...
+;;
+pattern2)
+Commands ...
+;;
+patternN)
+Commands ...
+;;
+*)
+Commands ... # run these if no other pattern matches
+;;
+esac
+```
+**Example-**
+```
+#!/bin/bash
+read -p "Please enter a number: " number
+case "$number" in
+"") echo "You didn't enter anything!"
+[0-9]) echo "you have entered a single digit number";;
+[0-9][0-9]) echo "you have entered a two digit number";;
+[0-9][0-9][0-9]) echo "you have entered a three digit number";;
+*) echo "you have entered a number that is more than three digits";;
+esac
+```
+**Key Point releated to Case** </br>
+It’s very important to remember to use a $ in front of
+the variable name otherwise the case statement won't
+work, as it cannot access the variable’s value. </br>
+Remember to wrap the expansion of the variable
+name in double quotes to avoid word splitting issues
+Patterns follow the same rules as globbing patterns. </br>
+Patterns are evaluated from top to bottom, and only
+the commands associated with the first pattern that
+matches will be run. </br>
+*) is used as a “default” case, and is used to hold
+commands that should run if no other cases match. </br>
+
+---
