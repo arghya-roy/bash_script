@@ -8,7 +8,7 @@
 ```
 ---
 ### How to add script folder path to enviroment variable-
-see it later
+     see it later
 ---
 ### assign a output of a command inside a variable -
 #### Syntax
