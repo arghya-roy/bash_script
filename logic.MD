@@ -90,7 +90,7 @@ There are four types of syntax - </br>
 **3) if [ command ];** </br>
 **4) if [[ command ]];** </br>
 
-## 1) if ( command ); - Not use too much.
+## 1) if ( command ); - Not use too much-
 Using single parentheses in bash scripting creates a subshell. When combined with the if statement, the subprocess finishes before continuing the program. The if analyzes the exit status and acts accordingly. </br>
 In this commands running inside if does not keep its result, it works as a local command or local variable. we will understand in after reading the below example.
 ```
@@ -137,3 +137,8 @@ After fi:
 inner_variable = 
 outer_variable = Defined
 ```
+## 1) if (( command )); - Arithmetic evaluation and C-style variable manipulation
+The double parentheses construct in bash allows: </br>
+**Arithmetic evaluation.** Defining a variable as a=$(( 1+1 )) calculates the equation and sets a to 2. </br>
+**C-style variable manipulation.** For example, incrementing variables with (( a++ )). </br>
+
