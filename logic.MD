@@ -25,7 +25,6 @@ different pieces of information”
 #### Syntax - [ EXPRESSION ]
 </br>
 **need to use [ ] for below -** </br>
-</br>
 `-eq` `[ 2 -eq 2 ]` Successful if the two numbers are equal </br>
 `-ne` `[ 2 -ne 2 ]` Successful if the two numbers are not equal </br>
 `-e` `[ -e /path/to/file ]` Successful if a file system entry /path/to/file exists </br>
