@@ -119,6 +119,7 @@ user's home directory. </br>
 ### Brace Expansion - 
 A way of automatically generating text according to a
 certain pattern.
+There should be no spaces around any commas or double dots 
 **Example-**
 ```
 echo {1,2,3,4,5}                   // it print 1 to 5
