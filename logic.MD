@@ -176,3 +176,6 @@ you have to use [ ] , (( )) does not work for this case.
 `if (( var1=$(( 2%2 )) ));` </br>
 `if (( var1=$(( 2*2 )) ));` </br>
 
+## 2) if [ command ]; - compare numbers and testing
+Comparing numbers and testing whether a file exists or other testing.
+
