@@ -64,18 +64,20 @@ different pieces of information”
 `-R varname` True if the shell variable varname is set and is a name reference. </br>
 `-z string` True if the length of string is zero. </br>
 `-n string` True if the length of string is non-zero. </br>
-`string1 == string2` True if the strings are equal. It will perform pattern matching when used with the [[ command. The = notation should be used with the test command for POSIX   conformance. </br>
-`string1 = string2` (same as string1 == string2 ). </br>
-`string1 != string2` True if the strings are not equal. </br>
-`string1 =~ regex` True if the strings match the Bash regular expression regex. Captured groups are stored in the BASH_REMATCH array variable. </br>
-`string1 < string2` True if string1 sorts before string2 lexicographically. </br>
-`string1 > string2` True if string1 sorts after string2 lexicographically. </br>
 `arg1 -eq arg2` True if arg1 equal to arg2 </br>
 `arg1 -ne arg2` True if arg1 not equal to arg2 </br>
 `arg1 -lt arg2` True if arg1 less than arg2 </br>
 `arg1 -le arg2` True if arg1 less than or equal to arg2 </br>
 `arg1 -gt arg2` True if arg1 greater than arg2 </br>
 `arg1 -ge arg2` True if arg1 greater than or equal to arg2 </br>
+**need to use [[ ]] for below -** </br>
+`string1 == string2` True if the strings are equal. It will perform pattern matching when used with the [[ command. The = notation should be used with the test command for POSIX   conformance. </br>
+`string1 = string2` (same as string1 == string2 ). </br>
+`string1 != string2` True if the strings are not equal. </br>
+`string1 =~ regex` True if the strings match the Bash regular expression regex. Captured groups are stored in the BASH_REMATCH array variable. </br>
+`string1 < string2` True if string1 sorts before string2 lexicographically. </br>
+`string1 > string2` True if string1 sorts after string2 lexicographically. </br>
+
 
 
 
