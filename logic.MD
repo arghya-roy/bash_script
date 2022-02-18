@@ -265,3 +265,14 @@ fi
 
 ##  Troubleshooting - 
 Whenever there is a error after running with single bracket then try with with double bracket and vice versa.
+## Pass a normal Linux Command in if statement - 
+no parenthesis and bracket is required, just pass the command. I am giving a example below -
+```
+#!/bin/bash
+echo "enter the directory name"
+read ab
+    if mkdir $ab 2>/dev/null; then
+      echo "directory created "
+      ls -ld "$ab"
+    fi
+```
