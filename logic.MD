@@ -19,7 +19,9 @@ The “or” operator. The shell will only run
 command2 if command1 is unsuccessful (i.e. returns a non-zero exit code).
 
 ---
-## if - else condition -
+### TEST COMMANDS + CONDITIONAL OPERATORS:
+“a command that can be used in bash to compare
+different pieces of information”
 #### Syntax - [ EXPRESSION ]
 
 
@@ -34,3 +36,9 @@ command2 if command1 is unsuccessful (i.e. returns a non-zero exit code).
 `-d`  `[ -d /path/to/dir ]` Successful if a file system entry /path/to/file exists and is a directory </br>
 `-x` `[ -x /path/to/file ]` Successful if a file system entry /path/to/dir exists and is executable by the current user </br>
 
+---
+## if - else condition -
+start and end using the reserved words “if” and “fi”. </br>
+check the exit status of a command and only runs the command if a certain condition is true.
+### syntax -
+`if [ $number -gt 0 ];` or if command 
